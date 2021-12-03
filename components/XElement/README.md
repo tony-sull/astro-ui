@@ -441,7 +441,7 @@ const { button: ConfettiButton, div: Confetti } = XElement
 <Confetti class="confetti">
   <ConfettiButton
     class="btn"
-    @click={() => {
+    @click={async () => {
       const confetti = await import('https://cdn.skypack.dev/canvas-confetti').then(exports => exports.default)
 
       confetti()
